@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BashFx — Frontend Web Developer</title>
+<meta name="description" content="BashFx — freelance frontend developer building responsive, interactive websites with HTML, CSS and JavaScript.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="site-header" id="header">
+  <nav class="nav" aria-label="Primary">
+    <a href="#home" class="nav-logo">Bash<span class="accent">Fx</span></a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#home" class="nav-link active" data-nav>Home</a></li>
+      <li><a href="#about" class="nav-link" data-nav>About</a></li>
+      <li><a href="#services" class="nav-link" data-nav>Services</a></li>
+      <li><a href="#projects" class="nav-link" data-nav>Projects</a></li>
+      <li><a href="#skills" class="nav-link" data-nav>Skills</a></li>
+      <li><a href="#contact" class="nav-link nav-cta" data-nav>Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Freelance Frontend Developer</p>
+        <h1 class="hero-title">
+          Frontend developer building websites that feel <span class="accent-text">premium.</span>
+        </h1>
+        <p class="hero-text">
+          I design and build responsive, interactive websites for businesses, restaurants,
+          personal brands and startups — focused on clean code, thoughtful UI and
+          interactions that feel effortless.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" data-nav>View My Work</a>
+          <a href="#contact" class="btn btn-ghost" data-nav>Let's Work Together</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <!-- Replace profile.jpg with your professional profile photo. Keep the filename unchanged. -->
+        <div class="profile-showcase">
+          <div class="profile-photo-wrap">
+            <div class="profile-photo">
+              <img
+                src="profile.jpg"
+                alt="BashFx — Frontend Web Developer"
+                onerror="this.style.display='none'; this.parentElement.classList.add('photo-fallback')"
+              >
+              <span class="profile-initials" aria-hidden="true">BF</span>
+            </div>
+            <span class="profile-status" aria-hidden="true"></span>
+          </div>
+          <div class="profile-copy">
+            <span class="profile-label">Frontend Developer</span>
+            <strong>BashFx</strong>
+            <span>HTML · CSS · JavaScript</span>
+          </div>
+        </div>
+
+        <div class="editor-window">
+          <div class="editor-tabbar">
+            <div class="editor-tab">
+              <span class="tab-dot"></span>hero.html
+            </div>
+          </div>
+          <pre class="editor-code"><code><span class="tk-tag">&lt;section</span> <span class="tk-attr">class</span>=<span class="tk-str">"hero"</span><span class="tk-tag">&gt;</span>
+  <span class="tk-tag">&lt;h1&gt;</span>
+    Build Something <span class="tk-hl">Real</span>
+  <span class="tk-tag">&lt;/h1&gt;</span>
+  <span class="tk-tag">&lt;button</span> <span class="tk-attr">class</span>=<span class="tk-str">"cta"</span><span class="tk-tag">&gt;</span>
+    Let's Talk
+  <span class="tk-tag">&lt;/button&gt;</span>
+<span class="tk-tag">&lt;/section&gt;</span></code></pre>
+          <div class="terminal">
+            <div class="terminal-lines" id="terminalLines"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="reveal">
+        <p class="eyebrow">About</p>
+        <h2 class="section-title">Code that looks as good as it works.</h2>
+        <p class="body-text">
+          I'm a frontend developer who focuses on turning designs, ideas and references
+          into real, working websites. I care about the details that make a site feel
+          intentional — responsive layouts that hold up on any screen, clean and readable
+          interfaces, smooth interactions, and a mobile-first approach to every build.
+        </p>
+        <p class="body-text">
+          Whether you have a finished design, a rough sketch, or just a clear idea of what
+          you want, I build the frontend that brings it to life — with HTML, CSS and
+          vanilla JavaScript.
+        </p>
+      </div>
+
+      <div class="about-focus reveal">
+        <div class="focus-item">
+          <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+          <span>Responsive layouts</span>
+        </div>
+        <div class="focus-item">
+          <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+          <span>Clean UI</span>
+        </div>
+        <div class="focus-item">
+          <i class="fa-solid fa-arrow-pointer" aria-hidden="true"></i>
+          <span>Smooth interactions</span>
+        </div>
+        <div class="focus-item">
+          <i class="fa-solid fa-swatchbook" aria-hidden="true"></i>
+          <span>Modern visual design</span>
+        </div>
+        <div class="focus-item">
+          <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+          <span>Mobile-first builds</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Services</p>
+        <h2 class="section-title">What I can build for you</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <i class="fa-solid fa-code" aria-hidden="true"></i>
+          <h3>Frontend Website Development</h3>
+          <p>Full websites built from the ground up with clean, structured HTML, CSS and JavaScript.</p>
+        </div>
+        <div class="service-card reveal">
+          <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+          <h3>Responsive Web Design</h3>
+          <p>Layouts that adapt smoothly across desktop, tablet and mobile, without compromise.</p>
+        </div>
+        <div class="service-card reveal">
+          <i class="fa-solid fa-rocket" aria-hidden="true"></i>
+          <h3>Landing Page Development</h3>
+          <p>Focused, high-impact landing pages built to hold attention and guide action.</p>
+        </div>
+        <div class="service-card reveal">
+          <i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i>
+          <h3>Website Redesign</h3>
+          <p>Refreshing outdated or clunky sites into something modern, fast and usable.</p>
+        </div>
+        <div class="service-card reveal">
+          <i class="fa-solid fa-bug" aria-hidden="true"></i>
+          <h3>Website Bug Fixes</h3>
+          <p>Tracking down and fixing layout issues, broken interactions and cross-browser quirks.</p>
+        </div>
+        <div class="service-card reveal">
+          <i class="fa-solid fa-object-ungroup" aria-hidden="true"></i>
+          <h3>UI Implementation</h3>
+          <p>Turning a design file into pixel-conscious, working frontend code.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED PROJECTS ============ -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Featured Projects</p>
+        <h2 class="section-title">A closer look at my work</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        
+
+        <!-- Project 4 -->
+        <article class="project-card reveal">
+          <div class="project-preview preview-quiz" aria-hidden="true">
+            <div class="browser-chrome">
+              <span></span><span></span><span></span>
+              <div class="browser-url">quiz.app</div>
+            </div>
+            <div class="preview-body">
+              <div class="preview-quiz-score">04<span>/10</span></div>
+              <div class="preview-line w-70"></div>
+              <div class="preview-option"></div>
+              <div class="preview-option preview-option-active"></div>
+              <div class="preview-option"></div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-tag">Personal Project</span>
+            <h3>Exam / Quiz Website</h3>
+            <p class="project-category">Interactive Web App</p>
+            <p class="project-desc">An interactive examination interface with timed questions, scoring, results and restart functionality.</p>
+            <ul class="project-tech">
+              <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+            </ul>
+            <a href="#projects" class="project-link" data-project-link>View Project <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Skills</p>
+        <h2 class="section-title">Tools I build with</h2>
+      </div>
+
+      <div class="skills-grid reveal">
+        <div class="skill-row">
+          <div class="skill-label"><i class="fa-brands fa-html5" aria-hidden="true"></i>HTML5</div>
+          <div class="skill-signal" data-level="5"><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i>CSS3</div>
+          <div class="skill-signal" data-level="5"><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><i class="fa-brands fa-js" aria-hidden="true"></i>JavaScript</div>
+          <div class="skill-signal" data-level="4"><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>Responsive Web Design</div>
+          <div class="skill-signal" data-level="5"><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><i class="fa-solid fa-pen-ruler" aria-hidden="true"></i>UI/UX Implementation</div>
+          <div class="skill-signal" data-level="4"><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>CSS Animations</div>
+          <div class="skill-signal" data-level="4"><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i>DOM Manipulation</div>
+          <div class="skill-signal" data-level="4"><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><i class="fa-brands fa-git-alt" aria-hidden="true"></i>Git / GitHub</div>
+          <div class="skill-signal" data-level="3"><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY WORK WITH ME ============ -->
+  <section class="why" id="why">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Why Work With Me</p>
+        <h2 class="section-title">What you can expect</h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <i class="fa-solid fa-display" aria-hidden="true"></i>
+          <h3>Responsive Across Devices</h3>
+          <p>Every site is built and tested to hold up cleanly on phones, tablets and desktops.</p>
+        </div>
+        <div class="why-card reveal">
+          <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+          <h3>Clean, Maintainable Frontend</h3>
+          <p>Organized, readable code that's easy to hand off, extend or update later.</p>
+        </div>
+        <div class="why-card reveal">
+          <i class="fa-solid fa-eye" aria-hidden="true"></i>
+          <h3>Attention to Visual Detail</h3>
+          <p>Spacing, alignment and motion are treated as seriously as the layout itself.</p>
+        </div>
+        <div class="why-card reveal">
+          <i class="fa-solid fa-comments" aria-hidden="true"></i>
+          <h3>Clear Communication</h3>
+          <p>Straightforward updates throughout the project — no guessing where things stand.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Process</p>
+        <h2 class="section-title">How a project comes together</h2>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step reveal">
+          <span class="process-num">01</span>
+          <h3>Discuss</h3>
+          <p>Understand the client's goals, audience and what the site needs to do.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="process-num">02</span>
+          <h3>Plan</h3>
+          <p>Define structure, layout and user experience before any code is written.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="process-num">03</span>
+          <h3>Build</h3>
+          <p>Develop the responsive frontend with clean, structured code.</p>
+        </div>
+        <div class="process-step reveal">
+          <span class="process-num">04</span>
+          <h3>Refine</h3>
+          <p>Test across devices, polish the details and deliver.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="container contact-inner reveal">
+      <p class="eyebrow">Contact</p>
+      <h2 class="contact-title">Have a website idea?<br>Let's turn it into something real.</h2>
+
+      <div class="contact-links">
+        <button class="contact-link" id="copyEmail" type="button" data-email="bashirhashim330@gmail.com">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          <span>Email</span>
+        </button>
+        <a class="contact-link" href="https://github.com/bashirhashim330-fx" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+          <span>GitHub</span>
+        </a>
+        <a class="contact-link" href="https://www.fiverr.com/bashfx99" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+          <span>Fiverr</span>
+        </a>
+      </div>
+      <p class="contact-note" id="copyToast" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <a href="#home" class="nav-logo" data-nav>Bash<span class="accent">Fx</span></a>
+      <p>Frontend Web Developer</p>
+    </div>
+    <ul class="footer-nav">
+      <li><a href="#about" data-nav>About</a></li>
+      <li><a href="#services" data-nav>Services</a></li>
+      <li><a href="#projects" data-nav>Projects</a></li>
+      <li><a href="#contact" data-nav>Contact</a></li>
+    </ul>
+    <p class="footer-copy">© 2026 BashFx. All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
