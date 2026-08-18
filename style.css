@@ -1088,3 +1088,149 @@ button:focus-visible,
   }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* ===================================================================
+   FINAL MOBILE VIEWPORT FIX
+   Prevent desktop-sized grid/flex children from forcing horizontal
+   overflow on real mobile browsers.
+=================================================================== */
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+.container,
+.nav,
+.hero-grid,
+.about-grid,
+.services-grid,
+.projects-grid,
+.skills-grid,
+.why-grid,
+.process-grid,
+.footer-inner {
+  width: 100%;
+  max-width: var(--container);
+  min-width: 0;
+}
+
+.hero-grid > *,
+.about-grid > *,
+.services-grid > *,
+.projects-grid > *,
+.skills-grid > *,
+.why-grid > *,
+.process-grid > * {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.hero-content,
+.hero-visual,
+.hero-title,
+.hero-text,
+.hero-actions,
+.editor-window {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.hero-title,
+.hero-text,
+.section-title,
+.project-info h3,
+.project-desc,
+.service-card p,
+.why-card p,
+.process-step p {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+/* Do not let buttons or links create a wider flex item. */
+.btn,
+.hero-actions .btn,
+.contact-link,
+.project-link {
+  max-width: 100%;
+  min-width: 0;
+}
+
+/* Code/terminal areas scroll internally instead of widening the page. */
+.editor-window,
+.editor-code,
+.terminal {
+  min-width: 0;
+  max-width: 100%;
+}
+
+@media (max-width: 980px) {
+  .hero-grid,
+  .about-grid,
+  .services-grid,
+  .projects-grid,
+  .skills-grid,
+  .why-grid,
+  .process-grid {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .hero-content,
+  .hero-visual {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --pad-inline: 1rem;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding-inline: var(--pad-inline);
+  }
+
+  .hero-title {
+    width: 100%;
+    max-width: 100%;
+    font-size: clamp(2.15rem, 9.5vw, 3rem);
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+  }
+
+  .hero-text {
+    width: 100%;
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .hero-actions {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .editor-code {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+
+  .profile-showcase {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+}
