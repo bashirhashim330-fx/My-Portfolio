@@ -23,11 +23,13 @@ function initMobileNav() {
   const closeMenu = () => {
     menu.classList.remove('open');
     toggle.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('nav-open');
   };
 
   const openMenu = () => {
     menu.classList.add('open');
     toggle.setAttribute('aria-expanded', 'true');
+    document.body.classList.add('nav-open');
   };
 
   toggle.addEventListener('click', () => {
