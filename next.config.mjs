@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Only use basePath for GitHub Pages, not for Vercel
-  basePath: process.env.NEXT_PUBLIC_VERCEL === 'true' ? '' : '/My-Portfolio',
+  // GitHub Pages needs /My-Portfolio; Vercel needs empty basePath
+  basePath: process.env.VERCEL ? '' : '/My-Portfolio',
   output: 'export',
   trailingSlash: true,
   typescript: {
