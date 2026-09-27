@@ -53,7 +53,7 @@ const projects: Project[] = [
     description: 'A clean commerce interface balancing product discovery, useful filters, and a confident checkout flow.',
     stack: ['React', 'CSS', 'UI Design'],
     image: 'project-ecommerce.jpg',
-    liveUrl: 'https://ibbul-git-web-xvda.vercel.app/app/live/u25-fpy-csc-1126/cms8bwnc0001rld043uadbyg1',
+    liveUrl: 'https://ibbul-git-web-xvda.vercel.app/live/u25-fpy-csc-1126/cms8bwnc0001rld043uadbyg1',
   },
   {
     title: 'Study Flow',
