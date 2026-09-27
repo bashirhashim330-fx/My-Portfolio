@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // GitHub Pages needs /My-Portfolio; Vercel needs empty basePath
-  basePath: process.env.VERCEL ? '' : '/My-Portfolio',
+  // Vercel uses the domain root; GitHub Pages uses /My-Portfolio.
+  basePath: process.env.VERCEL_ENV ? '' : '/My-Portfolio',
   output: 'export',
   trailingSlash: true,
   typescript: {
