@@ -65,7 +65,7 @@ const projects: Project[] = [
   category: 'Luxury Watch E-Commerce',
   description: 'A premium watch shopping experience featuring immersive product presentation, interactive product inspection, and a refined shopping interface.',
   stack: ['JavaScript', 'HTML', 'CSS'],
-  image: 'project-ecommerce.jpg',
+  image: 'projecth-ecommerce.jpg',
   detail: 'Designed around a luxury watch brand, HALDEN combines immersive product visuals, interactive watch inspection, collection browsing, and shopping cart interactions in a refined responsive experience.',
   liveUrl: 'https://bashirhashim330-fx.github.io/Halden-site/#/',
 },
