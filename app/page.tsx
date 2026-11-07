@@ -115,31 +115,21 @@ const articles: Article[] = [
   },
   {
     category: 'Learning',
-    date: '11.07.26',
-    title: 'Lessons From Building My First E-Commerce Website',
-    description: 'Notes on hierarchy, trust, and the small details that move a product forward.',
-    image: 'project-ecommerce.jpg',
-    content: [
-      'The E-Commerce project on this site was the first time I had to design for trust, not just clarity. A portfolio page just needs to look good. A store needs to convince someone their card details and their money are safe with an interface they’ve never used before.',
-      'Product discovery was harder than I expected. It’s easy to build a grid of cards; it’s harder to build filters that actually help someone narrow down what they want without feeling like extra work. I spent more time on the filter and sort logic than on the product cards themselves.',
-      'Hierarchy matters more in commerce than almost anywhere else. Price, availability, and the primary action all need to be obvious in under a second, because that’s roughly how long someone gives an unfamiliar store before they decide whether to keep looking or leave.',
-      'The checkout flow taught me the most. Every extra field, every unclear label, every moment of “is this working?” is a chance to lose someone. I stripped the flow down repeatedly until each screen asked for exactly one thing and made it obvious what happened next.',
-      'I came out of that project with a rule I still use: if I can’t explain why a screen needs a piece of information or a decision, it probably shouldn’t be there.',
-    ],
-  },
-  {
-    category: 'Design',
-    date: '03.06.26',
-    title: 'Designing Better Trading Interfaces',
-    description: 'How restraint and clarity can turn complex data into a useful daily tool.',
-    image: 'project-ckcapital.jpg',
-    content: [
-      'CK Capital and Captrix pushed me into a different kind of design problem: interfaces where the data itself is the product, and getting the hierarchy wrong can genuinely cost someone money or attention at the wrong moment.',
-      'Trading dashboards want to show everything at once — balance, positions, risk, charts, alerts. The instinct is to add more panels. I found the opposite works better: decide what a trader needs to see in the first two seconds, and let everything else be one tap away instead of permanently on screen.',
-      'Color has to mean something and only that thing. I kept green and red strictly tied to gains and losses, and used a single accent color for everything else — navigation, active states, highlights — so a glance at the screen tells you performance instantly, without decoding the rest of the interface first.',
-      'Numbers need rhythm. Aligning decimals, keeping consistent digit widths, and spacing rows evenly sounds minor, but it’s the difference between a dashboard you can scan and one you have to read line by line, which matters when someone is checking it dozens of times a day.',
-      'Restraint turned out to be the actual skill. The best version of both dashboards was the one with fewer competing elements, not more — clarity beat density every time I tested it.',
-    ],
+    date: '07.11.26',
+    title: 'Lessons From Building HALDEN: Designing a Luxury E-Commerce Experience',
+  description: 'Exploring visual storytelling, product presentation, interaction design, and the details behind creating a premium digital shopping experience.',
+  image: 'projecth-ecommerce.jpg',
+  content: [
+    'HALDEN started with a simple idea: create a digital shopping experience that feels as refined as the products it presents. Rather than following the usual e-commerce layout, I wanted to explore how visual storytelling and thoughtful interactions could give a luxury watch brand its own identity.',
+    
+    'One of the biggest challenges was product presentation. Watches have details that deserve attention, from the case and dial to the strap. I focused on creating an interactive inspection experience that allows visitors to explore these details without making the interface feel complicated.',
+    
+    'Visual hierarchy played an important role throughout the project. Typography, spacing, imagery, and contrast needed to work together to communicate quality without overwhelming the visitor. Every section had to feel intentional.',
+    
+    'Interaction design was another important part of the process. From navigating the collection to interacting with the shopping cart, I wanted the experience to feel responsive and natural rather than like a collection of disconnected buttons.',
+    
+    'Building HALDEN reinforced something important for me: a good e-commerce website is not simply about displaying products. It is about presenting them in a way that creates interest, communicates value, and makes the overall shopping experience enjoyable.'
+  ],
   },
   {
     category: 'Growth',
