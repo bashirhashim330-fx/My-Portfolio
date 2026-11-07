@@ -61,14 +61,14 @@ type Article = {
 
 const projects: Project[] = [
   {
-    title: 'E-Commerce',
-    category: 'Online shopping',
-    description: 'A clean commerce interface balancing product discovery, useful filters, and a confident checkout flow.',
-    stack: ['React', 'CSS', 'UI Design'],
-    image: 'project-ecommerce.jpg',
-    detail: 'Most of the effort went into filter and sort logic that narrows the catalogue without feeling like extra work, and a checkout stripped back until each step asks for exactly one thing.',
-    liveUrl: 'https://ibbul-git-web-xvda.vercel.app/live/u25-fpy-csc-1126/cms8bwnc0001rld043uadbyg1',
-  },
+  title: 'HALDEN',
+  category: 'Luxury Watch E-Commerce',
+  description: 'A premium watch shopping experience featuring immersive product presentation, interactive product inspection, and a refined shopping interface.',
+  stack: ['JavaScript', 'HTML', 'CSS'],
+  image: 'project-ecommerce.jpg',
+  detail: 'Designed around a luxury watch brand, HALDEN combines immersive product visuals, interactive watch inspection, collection browsing, and shopping cart interactions in a refined responsive experience.',
+  liveUrl: 'https://bashirhashim330-fx.github.io/Halden-site/#/',
+},
   {
     title: 'Study Flow',
     category: 'Learning platform',
